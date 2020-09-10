@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task5</title>
+
+</head>
+<body>
+
+
+
+  
+
+  <!-- <script src="index.js">
+    
+  </script>
+  <script>
+    //leap year
+    function isLeap(year){
+      if(year % 4 === 0){
+        if(year %100 ===0){
+          if(year % 400 ===0){
+            return "Leap year."
+          }else{
+            return "Not leap year.";
+          }
+        }else{
+          return "Leap year.";
+        }
+      }else{
+        return "Not leap year.";
+      }
+    
+    }</script> -->
+
+    <script>
+      function whosPaying(names){
+
+        var numberOfPeople  = names.lenght;
+        var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+        var randomPerson  = names[randomPersonPosition];
+
+        return randomPerson + " is going to buy lunch today!";
+      }
+    </script>
+
+    <Script>
+        //fibonacchi generator
+
+        function fibonacchiGenerator(n){
+          var output =[];
+          if (n===1){
+            output= [0];
+          }else if(n===2){
+            output = [0,1];
+          }else{
+            output = [0,1];
+
+            for (var i=2; i<n; i++){
+              output.push(output[output.length-2] + output[output.length- 1]);
+            }
+      
+          }
+
+          return output;
+
+          
+        }
+          output = fibonacchiGenerator(10);
+          console.log(output);
+
+
+
+
+    </Script>
+
+
+
+
+  
+</body>
+</html>
